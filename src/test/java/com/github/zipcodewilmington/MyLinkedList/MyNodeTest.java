@@ -8,11 +8,11 @@ import static org.junit.jupiter.api.Assertions.*;
 class MyNodeTest {
 
     @Test
-    void getNext() {
+    void getNextTest() {
     }
 
     @Test
-    void setNext() {
+    void setNextTest() {
         //Given
         MyNode first = new MyNode("tolani", 1);
         MyNode second = new MyNode("Dima", 3);
@@ -22,7 +22,7 @@ class MyNodeTest {
         Assert.assertEquals(second, first.getNext());
     }
     @Test
-    void getData() {
+    void getDataSetTest() {
     }
 
     @Test

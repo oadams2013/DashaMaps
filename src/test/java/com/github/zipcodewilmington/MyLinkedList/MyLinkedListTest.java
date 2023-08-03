@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 public class MyLinkedListTest {
 
     @Test
-    public void add() {
+    public void addTest() {
         //Given
         MyLinkedList mll = new MyLinkedList("manny");
         String expectedKey = "brent";
@@ -22,13 +22,27 @@ public class MyLinkedListTest {
     }
 
     @Test
-    public void size() {
+    public void sizeTest() {
         //Given
-        int expected = 2;
+        int expected = 1;
         MyLinkedList mll = new MyLinkedList("manny");
         mll.add("brent", 6);
         //When
        int actual = mll.size();
+        //Then
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void getTest() {
+        //Given
+        MyLinkedList mll = new MyLinkedList("manny");
+        String expectedKey = "brent";
+        Integer expectedValue = 6;
+        MyNode expected = new MyNode(expectedKey, expectedValue);
+        mll.add("brent", 6);
+        //When
+        MyNode actual = mll.getHead().getNext();
         //Then
         Assert.assertEquals(expected, actual);
     }

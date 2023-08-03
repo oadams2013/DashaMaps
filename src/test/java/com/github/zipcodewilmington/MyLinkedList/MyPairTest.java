@@ -8,11 +8,11 @@ import static org.junit.jupiter.api.Assertions.*;
 class MyPairTest {
 
     @Test
-    void getKey() {
+    void getKeyTest() {
     }
 
     @Test
-    void setKey() {
+    void setKeyTest() {
         //Given
         String expectedKey = "pain";
         MyPair mypair = new MyPair("no", 3);
@@ -24,7 +24,7 @@ class MyPairTest {
     }
 
     @Test
-    void setValue() {
+    void setValueTest() {
         //Given
         Integer expectedValue = 19;
         MyPair mypair = new MyPair("no", 3);
@@ -36,11 +36,11 @@ class MyPairTest {
     }
 
     @Test
-    void testEquals() {
+    void testEqualsTest() {
     }
 
     @Test
-    void getValue() {
+    void getValueTest() {
 
     }
 }
