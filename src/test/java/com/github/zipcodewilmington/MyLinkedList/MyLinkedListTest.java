@@ -46,4 +46,19 @@ public class MyLinkedListTest {
         //Then
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void isEmpty() {
+        //Given
+        MyLinkedList mll = new MyLinkedList("manny");
+        mll.add("brent", 6);
+        //When
+        boolean actual = mll.isEmpty();
+        //Then
+        Assert.assertEquals(false, actual);
+    }
+
+    @Test
+    public void remove() {
+    }
 }

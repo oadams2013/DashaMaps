@@ -48,6 +48,18 @@ public class MyLinkedList {
         }
         return null;
     }
-    public Integer remove
+
+    public Integer remove(String key) { //its giiving a string (key) and returning and integer
+        MyNode previousNode = head;
+        MyNode currentNode = head.getNext();
+        while (currentNode != null && !currentNode.getData().getKey().equals(key)) {
+            currentNode = currentNode.getNext();
+        }
+        if (currentNode == null) {
+            return null;
+        }
+        previousNode.setNext(currentNode.getNext());
+        return currentNode.getData().getValue();
+    }
 }
 
